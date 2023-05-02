@@ -1,0 +1,48 @@
+.signin {
+    margin: 0 auto;
+    max-width: 500px;
+
+}
+
+.signin__title {
+
+}
+
+.signin__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.signin__field {
+    margin: 0;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+}
+
+.signin__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    
+    background-color: #7395AE;
+    border: 0;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+
+}
+
+.signin__button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.signin__error {
+    color: #8b0000;
+    text-align: center;
+}

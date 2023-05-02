@@ -1,0 +1,80 @@
+.TaskPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.TaskPopup__container {
+    box-sizing: border-box;
+    width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    padding: 0 36px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    z-index: 1;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .TaskPopup_opened {
+    display: flex;
+  }
+
+  .TaskPopup__close {
+    background-image: url(../../images/CloseIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    transition: all .2s;
+    cursor: pointer;
+  }
+  
+  .TaskPopup__close:hover {
+    opacity: 0.6;
+  }
+
+  .TaskPopup__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.TaskPopup__field {
+    margin: 0;
+    max-width: 100%;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+}
+
+.TaskPopup__save {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    
+    background-color: #7395AE;
+    border: 0;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.TaskPopup__save:hover {
+    opacity: .7;
+    cursor: pointer;
+}

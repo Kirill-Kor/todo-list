@@ -1,0 +1,77 @@
+.tasks__item {
+    margin: 0;
+    width: 100%;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'title status'
+    'description priority'
+    'date responsible';
+    transition: all .1s ease-in-out;
+}
+
+.tasks__item:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.tasks__title {
+    grid-area: title;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tasks__title_red {
+    color: #dc143c;
+}
+
+.tasks__title_completed {
+    color: #228b22;
+}
+
+.tasks__description {
+    grid-area: description;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tasks__status{
+    grid-area: status;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tasks__priority {
+    grid-area: priority;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tasks__responsible {
+    grid-area: responsible;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tasks__dateEnd {
+    grid-area: date;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+}

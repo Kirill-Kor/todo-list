@@ -1,0 +1,55 @@
+.tasks {
+    margin:auto;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    grid-template-areas: 
+    'title add'
+    'sorts sorts'
+    'task task';
+}
+.tasks-title {
+    grid-area: title;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+}
+
+.tasks__sorts {
+    grid-area: sorts;
+    justify-self: center;
+    display: flex;
+    gap: 15px;
+}
+
+.tasks__list {
+    grid-area: task;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tasks__add-button {
+    grid-area: add;
+    justify-self: center;
+    margin: 0;
+    width: 40px;
+    height: 30px;
+    background-image: url(../../images/add-button.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #7395AE;
+    border: 0;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.tasks__add-button:hover {
+    opacity: .7;
+    cursor: pointer;
+}

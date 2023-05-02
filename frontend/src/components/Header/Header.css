@@ -1,0 +1,22 @@
+.header__navigation {
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.header__button {
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #7395AE;
+    border: 0;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+
+}
+
+.header__button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
